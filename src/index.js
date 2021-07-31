@@ -47,3 +47,45 @@ import "./styles.css";
 // const [name, age] = myProfile;
 // const message4 = `名前は${name}です。年齢は${age}歳です。`;
 // console.log(message4);
+
+/**
+ * デフォルト値、引数など
+ */
+
+// const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
+// sayHello("TEPPEI")
+// 変数の後に＝があれば、デフォルト値を設定している
+
+/**
+ * スプレッド構文　...
+ */
+
+// 1:　　配列の展開
+//  const arr1 = [1, 2];
+// //  console.log(arr1);
+// //  console.log(...arr1);
+
+//  const sumFunc = (num1, num2) => console.log(num1 + num2);
+//  sumFunc(arr1[0], arr1[1]);
+//  sumFunc(...arr1)
+
+// 2:　　ひとつにまとめる
+// const arr2 = [1, 2, 3, 4, 5, 6 , 7];
+// const [num1, num2, ...arr3] = arr2;
+// console.log(num1);
+// console.log(num2);
+// console.log(arr3);
+
+// 3: 配列のコピーや結合
+const arr4 = [10, 20];
+const arr5 = [30, 40];
+
+const arr6 = [...arr4];
+console.log(arr6);
+
+const arr7 = [...arr4, ...arr5];
+console.log(arr7);
+
+const arr8 = arr4;
+arr8[0] = 100;
+console.log(arr8);
