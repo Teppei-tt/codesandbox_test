@@ -77,15 +77,53 @@ import "./styles.css";
 // console.log(arr3);
 
 // 3: 配列のコピーや結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
 
-const arr6 = [...arr4];
-console.log(arr6);
+// const arr6 = [...arr4];
+// console.log(arr6);
 
-const arr7 = [...arr4, ...arr5];
-console.log(arr7);
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7);
 
-const arr8 = arr4;
-arr8[0] = 100;
-console.log(arr8);
+// const arr8 = arr4;
+// arr8[0] = 100;
+// console.log(arr8);
+
+/**
+ * mapやfilterを使った配列の処理
+ */
+// const nameArr = ["TAKAMOTO", "YUZI", "REN"];
+//  for文を使った例
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
+
+// //mapをつかった例　mapは配列に対して使える関数
+
+// // Basic
+// const nameArr2 = nameArr.map((name) =>{
+//   return name;
+// });
+// console.log(nameArr2);
+// nameArr.map((name) => console.log(name));
+
+//How to use map
+// 1: 単純に配列をループして何か処理する
+// 2: returnされた結果に基づいて新しい配列を生成する
+
+// filterある条件に一致したものだけ、新しい配列として返す。
+// const numArr = [1, 2, 3, 4, 5];
+// const newArr = numArr.filter((num) => {
+//   return num % 2 === 0;
+// });
+// console.log(newArr);
+
+// const newNameArr = nameArr.map((name) => {
+//   if (name === "REN") {
+//     return name
+//   }else {
+//     return `${name}さん`
+//   }
+// })
+// console.log(newNameArr);
