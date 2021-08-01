@@ -127,3 +127,23 @@ import "./styles.css";
 //   }
 // })
 // console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+//　ある条件　？　　条件がtrue　：　条件がfalse
+// const val1 = 1 < 0 ? 'tureです。'　: 'false' ;
+// console.log(val1);
+
+// const num = 'a';
+// // console.log(num.toLocaleString());
+
+// const formattedNum = typeof num === 'number' ? num.toLocaleString() : 'EnterNUｍ';
+// console.log(formattedNum);
+// // typeofはその変数の型が何を判定してくれる
+
+//関数のリターン部分に三項演算子を使用するれい
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100  ? 'over 100' : 'safe';
+// }
+// console.log(checkSum(40, 0));
