@@ -147,3 +147,27 @@ import "./styles.css";
 //   return num1 + num2 > 100  ? 'over 100' : 'safe';
 // }
 // console.log(checkSum(40, 0));
+
+/**
+ *　 論理演算子の本当の意味を知ろう
+ */
+
+//  const flag1 = true;
+//  const flag2 = false;
+//  if(flag1 || flag2){
+//    console.log("１か２はtrueになります。");
+//  }
+
+//  if(flag1 && flag2){
+//   console.log("１も２もtrueになります。");
+// }
+
+// ||(パイプライン２つ)は左側がfalseの時、右を返す
+// const num = null;
+// const fee = num || "金額未設定です。"
+// console.log(fee);
+
+// &&は左側がtrueの時、右を返す
+const num２ = 100;
+const fee = num２ && "何か設定されました。";
+console.log(fee);
